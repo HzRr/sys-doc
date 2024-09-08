@@ -1,43 +1,40 @@
 <!doctype html>
-<html lang="zh-CN">
+<html lang="zh-CN" data-theme="dark">
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width,initial-scale=1" />
-    <meta name="generator" content="VuePress 2.0.0-rc.15" />
+    <meta name="generator" content="VuePress 2.0.0-rc.14" />
+    <meta name="theme" content="VuePress Theme Hope 2.0.0-rc.52" />
     <style>
-      :root {
-        --vp-c-bg: #fff;
+      html {
+        background: var(--bg-color, #fff);
       }
 
-      [data-theme='dark'] {
-        --vp-c-bg: #22272e;
+      html[data-theme="dark"] {
+        background: var(--bg-color, #1d1e1f);
       }
 
-      html,
       body {
-        background-color: var(--vp-c-bg);
+        background: var(--bg-color);
       }
     </style>
     <script>
-      const userMode = localStorage.getItem('vuepress-color-scheme')
+      const userMode = localStorage.getItem("vuepress-theme-hope-scheme");
       const systemDarkMode =
-        'matchMedia' in window
-          ? window.matchMedia('(prefers-color-scheme: dark)').matches
-          : false
+        window.matchMedia &&
+        window.matchMedia("(prefers-color-scheme: dark)").matches;
 
-      if (userMode === 'light') {
-        document.documentElement.dataset.theme = 'light'
-      } else if (userMode === 'dark' || systemDarkMode) {
-        document.documentElement.dataset.theme = 'dark'
+      if (userMode === "dark" || (userMode !== "light" && systemDarkMode)) {
+        document.documentElement.setAttribute("data-theme", "dark");
       }
     </script>
-    <title>ISCXDU SYS Documentation | VuePress</title><meta name="description" content="My first VuePress Site">
-    <link rel="preload" href="/sys-doc/assets/style-DVZqAxjP.css" as="style"><link rel="stylesheet" href="/sys-doc/assets/style-DVZqAxjP.css">
-    <link rel="modulepreload" href="/sys-doc/assets/app-BiIK_op1.js"><link rel="modulepreload" href="/sys-doc/assets/index.html-Cwb5vhaK.js">
-    <link rel="prefetch" href="/sys-doc/assets/get-started.html-CEz6S_nO.js" as="script"><link rel="prefetch" href="/sys-doc/assets/404.html-Wb6Mu5sd.js" as="script">
+    <title>首页 | ISCXDU SYS DOC</title><meta name="description" content="西电浪潮俱乐部SYS组学习路线文档">
+    <link rel="preload" href="/sys-doc/assets/style-D9VyNbVC.css" as="style"><link rel="stylesheet" href="/sys-doc/assets/style-D9VyNbVC.css">
+    <link rel="modulepreload" href="/sys-doc/assets/app-Tgfb261K.js"><link rel="modulepreload" href="/sys-doc/assets/index.html-ySWOjn0e.js"><link rel="modulepreload" href="/sys-doc/assets/plugin-vue_export-helper-DlAUqK2U.js">
+    <link rel="prefetch" href="/sys-doc/assets/index.html-DFZy-X5Z.js" as="script"><link rel="prefetch" href="/sys-doc/assets/arch.html-CeZrAcWV.js" as="script"><link rel="prefetch" href="/sys-doc/assets/c.html-CVmzFXVf.js" as="script"><link rel="prefetch" href="/sys-doc/assets/linux.html-xTCkZW43.js" as="script"><link rel="prefetch" href="/sys-doc/assets/os.html-B1jnk6zg.js" as="script"><link rel="prefetch" href="/sys-doc/assets/python.html-BSJ2sljo.js" as="script"><link rel="prefetch" href="/sys-doc/assets/index.html-BKHoUUej.js" as="script"><link rel="prefetch" href="/sys-doc/assets/404.html-DNgGMh6I.js" as="script"><link rel="prefetch" href="/sys-doc/assets/photoswipe.esm-GXRgw7eJ.js" as="script">
   </head>
   <body>
-    <div id="app"><!--[--><div class="vp-theme-container no-sidebar external-link-icon" vp-container><!--[--><header class="vp-navbar" vp-navbar><div class="vp-toggle-sidebar-button" title="toggle sidebar" aria-expanded="false" role="button" tabindex="0"><div class="icon" aria-hidden="true"><span></span><span></span><span></span></div></div><span><a class="route-link" href="/sys-doc/"><img class="vp-site-logo" src="https://vuejs.press/images/hero.png" alt="VuePress"><span class="vp-site-name vp-hide-mobile" aria-hidden="true">VuePress</span></a></span><div class="vp-navbar-items-wrapper" style=""><!--[--><!--]--><nav class="vp-navbar-items vp-hide-mobile" aria-label="site navigation"><!--[--><div class="vp-navbar-item"><a class="route-link route-link-active auto-link" href="/sys-doc/" aria-label="ISCXDU SYS Documentation"><!---->ISCXDU SYS Documentation<!----></a></div><div class="vp-navbar-item"><a class="route-link auto-link" href="/sys-doc/get-started.html" aria-label="/get-started.html"><!---->/get-started.html<!----></a></div><!--]--></nav><!--[--><!--]--><button type="button" class="vp-toggle-color-mode-button" title="toggle color mode"><svg class="light-icon" viewbox="0 0 32 32" style=""><path d="M16 12.005a4 4 0 1 1-4 4a4.005 4.005 0 0 1 4-4m0-2a6 6 0 1 0 6 6a6 6 0 0 0-6-6z" fill="currentColor"></path><path d="M5.394 6.813l1.414-1.415l3.506 3.506L8.9 10.318z" fill="currentColor"></path><path d="M2 15.005h5v2H2z" fill="currentColor"></path><path d="M5.394 25.197L8.9 21.691l1.414 1.415l-3.506 3.505z" fill="currentColor"></path><path d="M15 25.005h2v5h-2z" fill="currentColor"></path><path d="M21.687 23.106l1.414-1.415l3.506 3.506l-1.414 1.414z" fill="currentColor"></path><path d="M25 15.005h5v2h-5z" fill="currentColor"></path><path d="M21.687 8.904l3.506-3.506l1.414 1.415l-3.506 3.505z" fill="currentColor"></path><path d="M15 2.005h2v5h-2z" fill="currentColor"></path></svg><svg class="dark-icon" viewbox="0 0 32 32" style="display:none;"><path d="M13.502 5.414a15.075 15.075 0 0 0 11.594 18.194a11.113 11.113 0 0 1-7.975 3.39c-.138 0-.278.005-.418 0a11.094 11.094 0 0 1-3.2-21.584M14.98 3a1.002 1.002 0 0 0-.175.016a13.096 13.096 0 0 0 1.825 25.981c.164.006.328 0 .49 0a13.072 13.072 0 0 0 10.703-5.555a1.01 1.01 0 0 0-.783-1.565A13.08 13.08 0 0 1 15.89 4.38A1.015 1.015 0 0 0 14.98 3z" fill="currentColor"></path></svg></button><!----></div></header><!--]--><div class="vp-sidebar-mask"></div><!--[--><aside class="vp-sidebar" vp-sidebar><nav class="vp-navbar-items" aria-label="site navigation"><!--[--><div class="vp-navbar-item"><a class="route-link route-link-active auto-link" href="/sys-doc/" aria-label="ISCXDU SYS Documentation"><!---->ISCXDU SYS Documentation<!----></a></div><div class="vp-navbar-item"><a class="route-link auto-link" href="/sys-doc/get-started.html" aria-label="/get-started.html"><!---->/get-started.html<!----></a></div><!--]--></nav><!--[--><!--]--><!----><!--[--><!--]--></aside><!--]--><!--[--><main class="vp-home"><header class="vp-hero"><!----><h1 id="main-title">VuePress</h1><p class="vp-hero-description">My first VuePress Site</p><p class="vp-hero-actions"><!--[--><a class="route-link auto-link vp-hero-action-button primary" href="/sys-doc/get-started.html" aria-label="Get Started"><!---->Get Started<!----></a><a class="route-link route-link-active auto-link vp-hero-action-button secondary" href="/sys-doc/" aria-label="Introduction"><!---->Introduction<!----></a><!--]--></p></header><div class="vp-features"><!--[--><div class="vp-feature"><h2>Simplicity First</h2><p>Minimal setup with markdown-centered project structure helps you focus on writing.</p></div><div class="vp-feature"><h2>Vue-Powered</h2><p>Enjoy the dev experience of Vue, use Vue components in markdown, and develop custom themes with Vue.</p></div><div class="vp-feature"><h2>Performant</h2><p>VuePress generates pre-rendered static HTML for each page, and runs as an SPA once a page is loaded.</p></div><div class="vp-feature"><h2>Themes</h2><p>Providing a default theme out of the box. You can also choose a community theme or create your own one.</p></div><div class="vp-feature"><h2>Plugins</h2><p>Flexible plugin API, allowing plugins to provide lots of plug-and-play features for your site.</p></div><div class="vp-feature"><h2>Bundlers</h2><p>Default bundler is Vite, while Webpack is also supported. Choose the one you like!</p></div><!--]--></div><div class="theme-default-content" vp-content><div><p>This is the content of home page. Check <a href="https://vuejs.press/reference/default-theme/frontmatter.html#home-page" target="_blank" rel="noopener noreferrer">Home Page Docs</a> for more details.</p></div></div><!--[--><div class="vp-footer" vp-footer>MIT Licensed | Copyright © 2024-present ISCXDU SYS Group</div><!--]--></main><!--]--></div><!--[--><!----><!--]--><!--]--></div>
-    <script type="module" src="/sys-doc/assets/app-BiIK_op1.js" defer></script>
+    <div id="app"><!--[--><!--[--><!--[--><span tabindex="-1"></span><a href="#main-content" class="vp-skip-link sr-only">跳至主要內容</a><!--]--><!--[--><div class="theme-container no-sidebar external-link-icon pure"><!--[--><header id="navbar" class="vp-navbar"><div class="vp-navbar-start"><button type="button" class="vp-toggle-sidebar-button" title="Toggle Sidebar"><span class="icon"></span></button><!----><!--[--><a class="route-link vp-brand" href="/sys-doc/"><!----><!----><span class="vp-site-name">ISCXDU SYS DOC</span></a><!--]--><!----></div><div class="vp-navbar-center"><!----><!--[--><nav class="vp-nav-links"><div class="vp-nav-item hide-in-mobile"><a class="route-link route-link-active auto-link" href="/sys-doc/" aria-label="首页"><!--[--><span class="font-icon icon home" style=""></span><!--]-->首页<!----></a></div><div class="vp-nav-item hide-in-mobile"><a class="route-link auto-link" href="/sys-doc/intro/" aria-label="SYS组简介"><!--[--><span class="font-icon icon fas fa-info-circle" style=""></span><!--]-->SYS组简介<!----></a></div><div class="vp-nav-item hide-in-mobile"><a class="route-link auto-link" href="/sys-doc/guide/" aria-label="学习路线"><!--[--><span class="font-icon icon lightbulb" style=""></span><!--]-->学习路线<!----></a></div></nav><!--]--><!----></div><div class="vp-navbar-end"><!----><!--[--><!----><!----><!----><!----><!--]--><!----><button type="button" class="vp-toggle-navbar-button" aria-label="Toggle Navbar" aria-expanded="false" aria-controls="nav-screen"><span><span class="vp-top"></span><span class="vp-middle"></span><span class="vp-bottom"></span></span></button></div></header><!----><!--]--><!----><div class="toggle-sidebar-wrapper"><span class="arrow start"></span></div><aside id="sidebar" class="vp-sidebar"><!----><ul class="vp-sidebar-links"></ul><!----></aside><!--[--><main id="main-content" class="vp-page vp-project-home" aria-labelledby="main-title"><!----><header class="vp-hero-info-wrapper"><!--[--><!----><!----><!--]--><div class="vp-hero-info"><!--[--><img class="vp-hero-image" style="" src="/sys-doc/inspur_logo.png" alt><!--]--><div class="vp-hero-infos"><h1 id="main-title" class="vp-hero-title">ISCXDU SYS DOC</h1><p id="main-description">西电浪潮俱乐部SYS组学习路线文档</p><p class="vp-hero-actions"><a class="route-link auto-link vp-hero-action primary no-external-link-icon" href="/sys-doc/guide/" aria-label="学习路线"><!---->学习路线<!----></a><a class="route-link auto-link vp-hero-action secondary no-external-link-icon" href="/sys-doc/intro/" aria-label="SYS组简介"><!---->SYS组简介<!----></a></p></div></div></header><!----><!----><div class="theme-hope-content"></div><!----></main><!--]--><footer class="vp-footer-wrapper"><div class="vp-footer">MIT Licensed | Copyright © 2024-present ISCXDU SYS Group</div><!----></footer></div><!--]--><!--]--><!--[--><!----><!--]--><!--]--></div>
+    <script type="module" src="/sys-doc/assets/app-Tgfb261K.js" defer></script>
   </body>
 </html>

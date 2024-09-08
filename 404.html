@@ -1,43 +1,40 @@
 <!doctype html>
-<html lang="zh-CN">
+<html lang="zh-CN" data-theme="dark">
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width,initial-scale=1" />
-    <meta name="generator" content="VuePress 2.0.0-rc.15" />
+    <meta name="generator" content="VuePress 2.0.0-rc.14" />
+    <meta name="theme" content="VuePress Theme Hope 2.0.0-rc.52" />
     <style>
-      :root {
-        --vp-c-bg: #fff;
+      html {
+        background: var(--bg-color, #fff);
       }
 
-      [data-theme='dark'] {
-        --vp-c-bg: #22272e;
+      html[data-theme="dark"] {
+        background: var(--bg-color, #1d1e1f);
       }
 
-      html,
       body {
-        background-color: var(--vp-c-bg);
+        background: var(--bg-color);
       }
     </style>
     <script>
-      const userMode = localStorage.getItem('vuepress-color-scheme')
+      const userMode = localStorage.getItem("vuepress-theme-hope-scheme");
       const systemDarkMode =
-        'matchMedia' in window
-          ? window.matchMedia('(prefers-color-scheme: dark)').matches
-          : false
+        window.matchMedia &&
+        window.matchMedia("(prefers-color-scheme: dark)").matches;
 
-      if (userMode === 'light') {
-        document.documentElement.dataset.theme = 'light'
-      } else if (userMode === 'dark' || systemDarkMode) {
-        document.documentElement.dataset.theme = 'dark'
+      if (userMode === "dark" || (userMode !== "light" && systemDarkMode)) {
+        document.documentElement.setAttribute("data-theme", "dark");
       }
     </script>
-    <title>VuePress</title><meta name="description" content="My first VuePress Site">
-    <link rel="preload" href="/sys-doc/assets/style-DVZqAxjP.css" as="style"><link rel="stylesheet" href="/sys-doc/assets/style-DVZqAxjP.css">
-    <link rel="modulepreload" href="/sys-doc/assets/app-BiIK_op1.js"><link rel="modulepreload" href="/sys-doc/assets/404.html-Wb6Mu5sd.js">
-    <link rel="prefetch" href="/sys-doc/assets/index.html-Cwb5vhaK.js" as="script"><link rel="prefetch" href="/sys-doc/assets/get-started.html-CEz6S_nO.js" as="script">
+    <title>ISCXDU SYS DOC</title><meta name="description" content="西电浪潮俱乐部SYS组学习路线文档">
+    <link rel="preload" href="/sys-doc/assets/style-D9VyNbVC.css" as="style"><link rel="stylesheet" href="/sys-doc/assets/style-D9VyNbVC.css">
+    <link rel="modulepreload" href="/sys-doc/assets/app-Tgfb261K.js"><link rel="modulepreload" href="/sys-doc/assets/404.html-DNgGMh6I.js"><link rel="modulepreload" href="/sys-doc/assets/plugin-vue_export-helper-DlAUqK2U.js">
+    <link rel="prefetch" href="/sys-doc/assets/index.html-ySWOjn0e.js" as="script"><link rel="prefetch" href="/sys-doc/assets/index.html-DFZy-X5Z.js" as="script"><link rel="prefetch" href="/sys-doc/assets/arch.html-CeZrAcWV.js" as="script"><link rel="prefetch" href="/sys-doc/assets/c.html-CVmzFXVf.js" as="script"><link rel="prefetch" href="/sys-doc/assets/linux.html-xTCkZW43.js" as="script"><link rel="prefetch" href="/sys-doc/assets/os.html-B1jnk6zg.js" as="script"><link rel="prefetch" href="/sys-doc/assets/python.html-BSJ2sljo.js" as="script"><link rel="prefetch" href="/sys-doc/assets/index.html-BKHoUUej.js" as="script"><link rel="prefetch" href="/sys-doc/assets/photoswipe.esm-GXRgw7eJ.js" as="script">
   </head>
   <body>
-    <div id="app"><!--[--><div class="vp-theme-container" vp-container data-v-467566a4><main class="page" data-v-467566a4><div class="theme-default-content" vp-content data-v-467566a4><h1 data-v-467566a4>404</h1><blockquote data-v-467566a4>Looks like we&#39;ve got some broken links.</blockquote><a class="route-link" href="/sys-doc/" data-v-467566a4>Take me home</a></div></main></div><!--[--><!----><!--]--><!--]--></div>
-    <script type="module" src="/sys-doc/assets/app-BiIK_op1.js" defer></script>
+    <div id="app"><!--[--><!--[--><!--[--><span tabindex="-1"></span><a href="#main-content" class="vp-skip-link sr-only">跳至主要內容</a><!--]--><!--[--><div class="theme-container no-sidebar external-link-icon pure has-toc"><!--[--><header id="navbar" class="vp-navbar"><div class="vp-navbar-start"><button type="button" class="vp-toggle-sidebar-button" title="Toggle Sidebar"><span class="icon"></span></button><!----><!--[--><a class="route-link vp-brand" href="/sys-doc/"><!----><!----><span class="vp-site-name">ISCXDU SYS DOC</span></a><!--]--><!----></div><div class="vp-navbar-center"><!----><!--[--><nav class="vp-nav-links"><div class="vp-nav-item hide-in-mobile"><a class="route-link auto-link" href="/sys-doc/" aria-label="首页"><!--[--><span class="font-icon icon home" style=""></span><!--]-->首页<!----></a></div><div class="vp-nav-item hide-in-mobile"><a class="route-link auto-link" href="/sys-doc/intro/" aria-label="SYS组简介"><!--[--><span class="font-icon icon fas fa-info-circle" style=""></span><!--]-->SYS组简介<!----></a></div><div class="vp-nav-item hide-in-mobile"><a class="route-link auto-link" href="/sys-doc/guide/" aria-label="学习路线"><!--[--><span class="font-icon icon lightbulb" style=""></span><!--]-->学习路线<!----></a></div></nav><!--]--><!----></div><div class="vp-navbar-end"><!----><!--[--><!----><!----><!----><!----><!--]--><!----><button type="button" class="vp-toggle-navbar-button" aria-label="Toggle Navbar" aria-expanded="false" aria-controls="nav-screen"><span><span class="vp-top"></span><span class="vp-middle"></span><span class="vp-bottom"></span></span></button></div></header><!----><!--]--><!----><div class="toggle-sidebar-wrapper"><span class="arrow start"></span></div><aside id="sidebar" class="vp-sidebar"><!----><ul class="vp-sidebar-links"><li><a class="route-link auto-link vp-sidebar-link" href="/sys-doc/" aria-label="首页"><!--[--><span class="font-icon icon home" style=""></span><!--]-->首页<!----></a></li><li><section class="vp-sidebar-group"><button class="vp-sidebar-header clickable" type="button"><span class="font-icon icon fas fa-info-circle" style=""></span><span class="vp-sidebar-title">SYS组简介</span><span class="vp-arrow end"></span></button><!----></section></li><li><section class="vp-sidebar-group"><button class="vp-sidebar-header clickable" type="button"><span class="font-icon icon lightbulb" style=""></span><span class="vp-sidebar-title">学习路线</span><span class="vp-arrow end"></span></button><!----></section></li></ul><!----></aside><!--[--><main id="main-content" class="vp-page not-found"><div class="not-found-hint"><p class="error-code">404</p><h1 class="error-title">页面不存在</h1><p class="error-hint">这 是 四 零 四 !</p></div><div class="actions"><button type="button" class="action-button">返回上一页</button><button type="button" class="action-button">带我回家</button></div></main><!--]--><!----></div><!--]--><!--]--><!--[--><!----><!--]--><!--]--></div>
+    <script type="module" src="/sys-doc/assets/app-Tgfb261K.js" defer></script>
   </body>
 </html>
