@@ -13,7 +13,6 @@ export default defineUserConfig({
 
   theme: hopeTheme({
     pure: true,
-    darkmode: "enable",
 
     navbar,
   })

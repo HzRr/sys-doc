@@ -11,20 +11,3 @@ export const routes = Object.fromEntries([
   ["/intro/", { loader: () => import(/* webpackChunkName: "intro_index.html" */"/home/origami/Projects/iscxdu-sys-doc/docs/.vuepress/.temp/pages/intro/index.html.js"), meta: {"t":"SYS组简介","i":"fas fa-info-circle"} }],
   ["/404.html", { loader: () => import(/* webpackChunkName: "404.html" */"/home/origami/Projects/iscxdu-sys-doc/docs/.vuepress/.temp/pages/404.html.js"), meta: {"t":""} }],
 ]);
-
-if (import.meta.webpackHot) {
-  import.meta.webpackHot.accept()
-  if (__VUE_HMR_RUNTIME__.updateRoutes) {
-    __VUE_HMR_RUNTIME__.updateRoutes(routes)
-  }
-  if (__VUE_HMR_RUNTIME__.updateRedirects) {
-    __VUE_HMR_RUNTIME__.updateRedirects(redirects)
-  }
-}
-
-if (import.meta.hot) {
-  import.meta.hot.accept(({ routes, redirects }) => {
-    __VUE_HMR_RUNTIME__.updateRoutes(routes)
-    __VUE_HMR_RUNTIME__.updateRedirects(redirects)
-  })
-}

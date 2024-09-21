@@ -1,16 +1,3 @@
 import comp from "/home/origami/Projects/iscxdu-sys-doc/docs/.vuepress/.temp/pages/index.html.vue"
-const data = JSON.parse("{\"path\":\"/\",\"title\":\"首页\",\"lang\":\"zh-CN\",\"frontmatter\":{\"home\":true,\"icon\":\"home\",\"title\":\"首页\",\"heroImage\":\"/inspur_logo.png\",\"actions\":[{\"text\":\"学习路线\",\"link\":\"./guide/\",\"type\":\"primary\"},{\"text\":\"SYS组简介\",\"link\":\"./intro/\",\"type\":\"secondary\"}],\"copyright\":false,\"footer\":\"MIT Licensed | Copyright © 2024-present ISCXDU SYS Group\"},\"headers\":[],\"readingTime\":{\"minutes\":0.13,\"words\":39},\"filePathRelative\":\"README.md\"}")
+const data = JSON.parse("{\"path\":\"/\",\"title\":\"首页\",\"lang\":\"zh-CN\",\"frontmatter\":{\"home\":true,\"icon\":\"home\",\"title\":\"首页\",\"heroImage\":\"/inspur_logo.png\",\"actions\":[{\"text\":\"学习路线\",\"link\":\"./guide/\",\"type\":\"primary\"},{\"text\":\"SYS组简介\",\"link\":\"./intro/\",\"type\":\"secondary\"}],\"copyright\":false,\"footer\":\"MIT Licensed | Copyright © 2024-present ISCXDU SYS Group\"},\"headers\":[],\"git\":{\"createdTime\":1725764778000,\"updatedTime\":1725838586000,\"contributors\":[{\"name\":\"hzrr\",\"email\":\"756796457@qq.com\",\"commits\":2},{\"name\":\"hzrr\",\"email\":\"origami_suki@outlook.com\",\"commits\":1}]},\"readingTime\":{\"minutes\":0.13,\"words\":39},\"filePathRelative\":\"README.md\",\"localizedDate\":\"2024年9月8日\"}")
 export { comp, data }
-
-if (import.meta.webpackHot) {
-  import.meta.webpackHot.accept()
-  if (__VUE_HMR_RUNTIME__.updatePageData) {
-    __VUE_HMR_RUNTIME__.updatePageData(data)
-  }
-}
-
-if (import.meta.hot) {
-  import.meta.hot.accept(({ data }) => {
-    __VUE_HMR_RUNTIME__.updatePageData(data)
-  })
-}
